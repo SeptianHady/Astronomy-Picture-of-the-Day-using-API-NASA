@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar Astronomi Harian NASA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gambar Astronomi Harian NASA</h1>
+        <form id="dateForm">
+            <label for="dateInput">Pilih tanggal:</label>
+            <input type="date" id="dateInput" required>
+            <button type="submit">Dapatkan APOD</button>
+        </form>
+        <div id="apodDisplay" class="hidden">
+            <h2 id="apodTitle"></h2>
+            <div id="apodMedia"></div>
+            <p id="apodExplanation"></p>
+        </div>
+        <div id="errorMessage" class="hidden error"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
